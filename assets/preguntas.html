@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="./img/icono.png">
+    <script src="./js/base_preguntas.js"></script>
+    <script defer src="./js/index.js"></script>
+    <title>QUEST</title>
+</head>
+
+<body>
+  <header class="navegacion">
+    <div class="nav">
+      <a id="ayuda" class="btn btn-info" onclick="ayuda()">
+        PISTA
+      </a>
+    </div>
+  </header>
+
+  <main class="contenedor_principal">
+    <div id="tablero-de-juego">
+      <div class="pregunta" id="encabezado">
+        <span class="texto_pregunta" id="pregunta">Aquí va la pregunta</span>
+        <br>
+        <img id="imagen" src="https://i.ibb.co/kh4FD6Z/img.png">
+      </div>
+
+      <!-- div para cambiar las opciones de cada pregunta -->
+      <section class="opciones">
+        <div class="opcion" id="opcion-1" onclick="seleccionarOpción(0)">
+          Opción 1
+        </div>
+        <div class="opcion" id="opcion-2" onclick="seleccionarOpción(1)">
+          Opción 2
+        </div>
+        <div class="footer">
+          <button class="boton_enviar" id="btnrespuesta">Enviar respuesta</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Modal de respuestas -->
+  <div id="Modal_respuesta" class="modal">
+    <!-- contenido -->
+    <div class="modal-content">
+      <div class="modal-info success">
+        <p id="text_respuesta"></p>
+      </div>
+      <div class="boton_seguir">
+        <button class="siguiente" id="btnmodal">Siguiente</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal de ayuda -->
+  <div id="Modal_ayuda" class="modal_ayuda">
+    <!-- Modal content -->
+    
+    <div class="modal-content ayuda">
+      <span class="close" id="close">&times;</span>
+      <h2 id="titulo_pista">PISTA</h3>
+      <p id="text_ayuda"></p>
+    </div>
+  </div>
+</body>
+</html>
