@@ -1,14 +1,14 @@
 let baseDePreguntas = [ // Se mete en un arreglo las preguntas con sus repuetas,ayuda,imagenes y la otra opcion 
   {//PPREGUNTA 1
     pregunta: "¿CUÁL ES EL ORDEN DE LAS ESTACIONES DEL AÑO?",
-    imagen:"./img/estaciones.JPG",
+    imagen:"./img/estaciones.jpg",
     ayuda: " La primera estacion se reconoce por la transición entre el frío del invierno y el calor del verano",
     respuesta: ["Primavera, Verano, Otoño, Invierno"],
     distractores: ["Otoño, Primavera, Verano, Invierno"],
   },
   {//PPREGUNTA 2
     pregunta: "Según la forma geografica, ¿Cuál es este país?",
-    imagen:"./img/mexico.PNG",
+    imagen:"./img/mexico.png",
     ayuda: "En este país el mes de octubre es muy significativo",
     respuesta: "MÉXICO",
     distractores: ["GUATEMALA"],
